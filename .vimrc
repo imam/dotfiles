@@ -6,9 +6,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set wildignore+=*/node_modules/*,*/.git/*,*/vendor/*
 filetype plugin indent on
 " show existing tab with 4 spaces width
-set tabstop=2
+set tabstop=4
 " " when indenting with '>', use 4 spaces width
-set shiftwidth=2
+set shiftwidth=4
 " " On pressing tab, insert 4 spaces
 set expandtab
 
@@ -46,6 +46,7 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'takac/vim-hardtime'
 Plugin 'posva/vim-vue'
 Plugin 'eslint/eslint'
+Plugin 'sheerun/vim-polyglot'
 
 
 call vundle#end()            " required
@@ -81,3 +82,5 @@ nnoremap zz :update<cr>
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 "
+let g:NERDTreeMapHelp = '<F1>'
+

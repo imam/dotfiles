@@ -47,7 +47,9 @@ Plugin 'takac/vim-hardtime'
 Plugin 'posva/vim-vue'
 Plugin 'eslint/eslint'
 Plugin 'sheerun/vim-polyglot'
-
+Plugin 'valloric/youcompleteme'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -60,13 +62,22 @@ map <Leader>vi :VimuxInspectRunner<CR>
 map <Leader>vz :call VimuxZoomRunner()<CR>
 map <Leader>cp :CtrlP<CR>
 map <Leader>nt :NERDTree<CR>
-map <Leader>nf :NERDTreeFocus<CR>
+map <Leader>nfo :NERDTreeFocus<CR>
+map <Leader>nfi :NERDTreeFind<CR>
+map <Leader>tn :tabnew<CR>
+map <Leader>sv :so ~/.vimrc<CR>
+map <Leader>nc :NERDTreeClose<CR>
 
 :set nowrap
 :set relativenumber
 :set paste
 :set backupcopy=yes
 nnoremap zz :update<cr>
+
+
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 
 " " To ignore plugin indent changes, instead use:
 " "filetype plugin on
@@ -84,3 +95,4 @@ nnoremap zz :update<cr>
 "
 let g:NERDTreeMapHelp = '<F1>'
 
+:set smartindent

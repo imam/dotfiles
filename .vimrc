@@ -3,7 +3,7 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-set wildignore+=*/node_modules/*,*/.git/*,*/vendor/*
+set wildignore+=*/node_modules/*,*/.git/*,*/vendor/*,yarn.lock
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -47,9 +47,11 @@ Plugin 'takac/vim-hardtime'
 Plugin 'posva/vim-vue'
 Plugin 'eslint/eslint'
 Plugin 'sheerun/vim-polyglot'
-Plugin 'valloric/youcompleteme'
+Plugin 'neoclide/coc.nvim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
+Plugin 'jwalton512/vim-blade'
+Plugin 'preservim/nerdcommenter'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -96,3 +98,5 @@ let mapleader=" "
 let g:NERDTreeMapHelp = '<F1>'
 
 :set smartindent
+:set ignorecase
+:set smartcase
